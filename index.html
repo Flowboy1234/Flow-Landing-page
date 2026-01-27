@@ -739,7 +739,11 @@
 </section>
 </main>
 
-<footer class="footer">© 2025 FLOWDEV • Built by FlowDev — All rights reserved</footer>
+<footer class="footer">© <span id="year"></span> FLOWDEV • Built by FlowDev — All rights reserved</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 <!-- FLOATING CONTACT (BOTTOM-RIGHT) -->
 <div class="floating" aria-hidden="false">
